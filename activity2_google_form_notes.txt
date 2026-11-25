@@ -1,0 +1,19 @@
+ACTIVITY 2 GOOGLE FORM – ANSWERS
+
+Dataset used:
+Breast Cancer Wisconsin (Diagnostic) dataset (569 observations, 30 numerical features, two classes: benign and malignant).
+
+Dataset source link:
+https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic
+
+Public GitHub repository URL:
+PASTE YOUR OWN PUBLIC ACTIVITY 2 REPOSITORY URL HERE AFTER CREATING IT.
+
+Notebook/report file name:
+activity2_binary_classification.ipynb
+
+Key results in 2 to 3 sentences:
+At the default threshold of 0.50, Logistic Regression achieved test accuracy of 0.9649, precision of 0.9750, recall of 0.9286, F1-score of 0.9512 and ROC-AUC of 0.9960. Comparing thresholds 0.30, 0.50 and 0.70, threshold 0.30 gave the highest recall (0.9762) and F1-score (0.9762), with accuracy 0.9825 and precision 0.9762, so 0.30 is recommended for this coursework comparison when prioritising detection of malignant cases.
+
+One important decision you made and why:
+I made malignant the positive class so recall measures how many malignant samples are detected. I used a stratified 80:20 split and put StandardScaler inside a Pipeline so the scaler is fitted only on training data and the test data remains unseen.
